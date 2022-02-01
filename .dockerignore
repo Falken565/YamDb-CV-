@@ -1,0 +1,12 @@
+**
+
+!api/
+!users/
+!reviews/
+!templates/
+!api_yamdb
+!manage.py
+!requirements.txt
+
+.idea/
+__pycache__
