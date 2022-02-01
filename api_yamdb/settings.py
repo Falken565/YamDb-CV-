@@ -15,9 +15,6 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '178.154.241.179',
-    'falken.gq',
-    'www.falken.gq',
 ]
 
 
