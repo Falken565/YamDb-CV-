@@ -37,42 +37,28 @@ DB_PORT=5432 # порт для подключения к БД
 SECRET_KEY=<super-secret-key>
 ```
 
-Cоздать и активировать виртуальное окружение:
+Запуск приложения в контейнерах:
 
 ```
-python3 -m venv venv
-```
-
-```
-source env/bin/activate
-```
-
-```
-python3 -m pip install --upgrade pip
-```
-
-Установить зависимости из файла requirements.txt:
-
-```
-pip install -r requirements.txt
+docker-compose up -d --build
 ```
 
 Выполнить миграции:
 
 ```
-python3 manage.py migrate
+docker-compose exec web python manage.py migrate --noinput
 ```
 
 Создаем пользователя:
 
 ```
-python3 manage.py createsuperuser
+docker-compose exec web python manage.py createsuperuser
 ```
 
-Запустить проект локально:
+Собираем статику:
 
 ```
-python3 manage.py runserver
+docker-compose exec web python manage.py collectstatic --no-input
 ```
 
 ### Как взаимодействовать с проектом:
