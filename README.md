@@ -25,7 +25,7 @@ EMAIL_HOST_USER=<email address>
 EMAIL_HOST_PASSWORD=<email password>
 EMAIL_PORT=587
 
-# блок базы данных (по умолчанию стоит база SQLite при желании можно раскомитить код в settings.py)
+# блок базы данных
 DB_ENGINE=django.db.backends.postgresql_psycopg2 # указываем бд, с которой работаем
 POSTGRES_DB=yamdb_db # имя бд 
 POSTGRES_USER=vasya666 # логин для подключения к бд (укажите свой)
