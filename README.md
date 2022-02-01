@@ -69,7 +69,7 @@ python3 manage.py migrate
 python3 manage.py createsuperuser
 ```
 
-Запустить проект:
+Запустить проект локально:
 
 ```
 python3 manage.py runserver
