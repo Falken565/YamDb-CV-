@@ -13,7 +13,7 @@ git clone git@github.com:Falken565/YaMDB.git
 ```
 
 ```
-cd YaMDB
+cd YamDb-CV-
 ```
 
 Cоздать файл с переменными окружения .env:
